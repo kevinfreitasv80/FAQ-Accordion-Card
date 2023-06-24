@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 12px;
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: hsl(0, 0%, 100%);
+    justify-content: space-between;
+    padding: 5em 10em 1em 0;
+    border-radius: 2em;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.bgDesktopSection1{
+    position: absolute;
+    z-index: -2;
+    top: -40%;
+    left: -60%;
+}
+.box{
+    position: absolute;
+    left: -11%;
+    top: 45%;
+    width: 191px;
+    height: 184px;
+    filter: drop-shadow(-2px 0px 8px black);
+}
+.women{
+    position: relative;
+    z-index: -1;
+    right: 79px;
+    width: 472px;
+    height: 359px;
+    overflow: hidden;
+}
+
+.women2, .bgDesktopSection2{
+    display: none;
+}
+
+.questionClientMom{
+    width: 348px;
+    margin-bottom: 7em;
+}
+.questionClientMom h1{
+    font-size: 30px;
+}
+
+.itemsFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.itemsFlex img{
+    width: 10px;
+    height: 7px;
+    transition: .4s;
+}
+h2{
+    font-weight: 400;
+}
+h2:hover{
+    color: hsl(14, 88%, 65%);
+    transition: .3s;
+}
+
+hr{
+    border-color: hsla(240, 5%, 91%, .5);
+}
+.hr2{
+    display: none;
+}
+
+p{
+    color: hsl(0, 2%, 48%);
+    display: none;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1063px) {
+    main{
+        padding: 5em 5em 1em 0;
+    }
+
+    .box{
+        left: -6%;
+    }
+    .women{
+        right: 3em;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    main{
+        width: 90%;
+        display: inline-block;
+        padding: 0 3em 0 0;
+        text-align: center;
+    }
+
+    .section1{
+        overflow: visible;
+    }
+
+    .questionClientMom{
+        width: 100%;
+        margin: 2em;
+    }
+    .questionClient{
+        text-align: left;
+    }
+
+    .FAQh1{
+        margin-top: 5em;
+    }
+    
+    .box, .women, .bgDesktopSection1{
+        display: none;
+    }
+    .women2, .bgDesktopSection2{
+        position: absolute;
+        display: block;
+        left: 50%;
+        width: 30%;
+        transform: translateX(-50%);
+    }
+    .women2{
+        z-index: 3;
+    }
+    .bgDesktopSection2{
+        top: 1%;
+    }
+    
+    .section1{
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .women2, .bgDesktopSection2{
+        width: 43%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .women2, .bgDesktopSection2{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 370px) {
+    main{
+        width: 80%;
+    }
+    .FAQh1{
+        margin-top: 4em;
+    }
+    h2{
+        font-size: 16px;
+    }
+}
